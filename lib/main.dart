@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restapi_recipeapp/home_screen.dart';
+import 'package:restapi_recipeapp/recipe_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: RecipeApi(),
       debugShowCheckedModeBanner: false,
     );
   }
